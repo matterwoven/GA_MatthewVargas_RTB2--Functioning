@@ -1,0 +1,34 @@
+﻿<Window x:Class="GA_MatthewVargas_RTB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GA_MatthewVargas_RTB"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+		
+        <RichTextBox x:Name="rtbDisplay1" Margin="26,29,568,258" TextChanged="rtbDisplay_TextChanged">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="rtbDisplay" Text="Give Run a name"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <TextBox x:Name="SecondMessage_txt" HorizontalAlignment="Center" Margin="0,267,0,0" TextWrapping="Wrap" Text="Type a second message" VerticalAlignment="Top" Width="198" TextChanged="TextBox_TextChanged_1" Height="48"/>
+        <Button x:Name="Display_btn" Content="Display" HorizontalAlignment="Left" Margin="26,334,0,0" VerticalAlignment="Top" Height="65" Width="184" Click="Display_btn"/>
+        <TextBox x:Name="FirstMessage_txt" HorizontalAlignment="Left" Margin="26,267,0,0" TextWrapping="Wrap" Text="Type a message" VerticalAlignment="Top" Width="184" TextChanged="TextBox_TextChanged_1" Height="48"/>
+        <Label Content="Message to append" HorizontalAlignment="Center" Margin="0,212,0,0" VerticalAlignment="Top" Height="50" Width="116"/>
+        <Button x:Name="Append_btn" Content="Append" HorizontalAlignment="Center" Margin="0,334,0,0" VerticalAlignment="Top" Height="65" Width="196"/>
+        <Label Content="Type a Message" HorizontalAlignment="Left" Margin="68,212,0,0" VerticalAlignment="Top" Height="50" Width="100"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="571,29,0,0" VerticalAlignment="Top" Height="370" Width="175" Click="Clear_btn"/>
+        <RichTextBox x:Name="rtbDisplay2" Margin="293,29,301,258" TextChanged="rtbDisplay_TextChanged">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="rtbDisplay2" Text="Give Run a name"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>
